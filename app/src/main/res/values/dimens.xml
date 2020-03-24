@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tetSize">60sp</dimen>
+    <dimen name="buttons_text_size">40sp</dimen>
+    <dimen name="text_view_show_time_text_size">50sp</dimen>
+
+</resources>
