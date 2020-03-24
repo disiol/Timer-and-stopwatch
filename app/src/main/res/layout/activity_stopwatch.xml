@@ -13,15 +13,15 @@
         android:id="@+id/textViewShowTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:gravity="center"
         android:text="@string/text_view_show_time_text"
-        android:textSize="@dimen/text_view_show_time_text_size"
         android:textColor="@color/wite"
+        android:textSize="@dimen/text_view_show_time_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,8 +29,13 @@
     <!--TODO вынести в фрагмент-->
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,27 +48,30 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="30dp"
+            android:background="@color/onColor"
+            android:text="@string/start"
             android:textColor="@color/wite"
-            android:text="@string/start" />
+            android:textSize="30dp" />
 
         <Button
             android:id="@+id/buttonStop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="30dp"
+            android:background="@color/onColor"
+            android:text="@string/button_pause_text"
             android:textColor="@color/wite"
-            android:text="@string/button_pause_text" />
+            android:textSize="30dp" />
 
         <Button
             android:id="@+id/buttonReset"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="30dp"
+            android:background="@color/onColor"
+            android:text="@string/reset"
             android:textColor="@color/wite"
-            android:text="@string/reset" />
+            android:textSize="30dp" />
 
     </LinearLayout>
 
